@@ -25,8 +25,8 @@ function App() {
           </div>
         </nav>
         <div className="flex flex-col w-full">
-          <div className="md:ml-16">
-            <h1 className="wave mb-2 max-w-[290px] sm:max-w-[520px] md:ml-16 transition-all duration-300">
+          <div>
+            <h1 className="wave mb-2 max-w-[290px] sm:max-w-[520px] lg:ml-16 transition-all duration-300">
               <motion.span
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
@@ -46,25 +46,22 @@ function App() {
             initial={{ opacity: 0, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.5, type: "tween", ease: "easeOut" }}
-            className="text-2xl md:text-4xl font-medium sm:max-w-[780px] ml-6 md:ml-96 transition-all duration-300">
-              — a software engineer with passion for building and a tech
-              enthusiast with deep interest in{" "}
+            className="text-2xl md:text-4xl font-medium sm:max-w-[780px] ml-6 md:ml-24 lg:ml-96 transition-all duration-300">
+              — a software engineer passionate about building and a tech enthusiast with a keen interest in{" "}
               <TypeAnimation
                 sequence={[
                   1500,
-                  "modern web dev.",
+                  "web dev.",
                   2000,
                   "data.",
                   2000,
-                  "artificial intelignce.",
-                  100,
-                  "artificial intelligence.",
+                  "ai.",
                   2000,
                 ]}
                 wrapper="span"
                 cursor={true}
                 repeat={Infinity}
-                style={{ color: "#97dcc7", display: "inline-block" }}
+                style={{ color: "#97dcc7", display: "inline-block", wordBreak: "break-all" }}
               />
             </motion.h2>
           </div>
