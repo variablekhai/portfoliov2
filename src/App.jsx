@@ -31,12 +31,12 @@ function App() {
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4, duration: 0.2, type: "spring", stiffness: 100, damping: 11, mass: 0.3 }}
-              className="block text-8xl font-extrabold">Hey, 👋</motion.span>
+              className="block text-6xl md:text-8xl font-extrabold">Hey, 👋</motion.span>
               <motion.span 
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4, duration: 0.2, type: "spring", stiffness: 100, damping: 11, mass: 0.3 }}
-              className="block text-8xl font-extrabold mt-4">
+              className="block text-6xl md:text-8xl font-extrabold mt-4">
                 I&rsquo;m Khairul
               </motion.span>
             </h1>
