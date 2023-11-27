@@ -30,12 +30,12 @@ function App() {
               <motion.span
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.2, duration: 0.3 }}
-              className="block text-8xl font-extrabold">Hey,</motion.span>
+              transition={{ delay: 0.4, duration: 0.2, type: "spring", stiffness: 100, damping: 11, mass: 0.3 }}
+              className="block text-8xl font-extrabold">Hey, 👋</motion.span>
               <motion.span 
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.2, duration: 0.3 }}
+              transition={{ delay: 0.4, duration: 0.2, type: "spring", stiffness: 100, damping: 11, mass: 0.3 }}
               className="block text-8xl font-extrabold mt-4">
                 I&rsquo;m Khairul
               </motion.span>
@@ -43,9 +43,9 @@ function App() {
           </div>
           <div className="mt-4">
             <motion.h2 
-            initial={{ opacity: 0, y: 0 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.5, type: "tween", ease: "easeOut" }}
+            transition={{ delay: 0.6, duration: 0.5, ease: "easeInOut" }}
             className="text-2xl md:text-4xl font-medium sm:max-w-[780px] ml-6 md:ml-24 lg:ml-96 transition-all duration-300">
               — a software engineer passionate about building and a tech enthusiast with a keen interest in{" "}
               <TypeAnimation
